@@ -54,11 +54,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: hlehner@example.org
+                  example: vboehm@example.org
                 password:
                   type: string
                   description: ''
-                  example: natus
+                  example: cumque
               required:
                 - email
                 - password
@@ -110,11 +110,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: adrien.hills@example.net
+                  example: efrain.lemke@example.net
                 password:
                   type: string
                   description: ''
-                  example: repellendus
+                  example: rem
               required:
                 - email
                 - password
@@ -159,35 +159,35 @@ paths:
                 Full_name:
                   type: string
                   description: 'Must not be greater than 25 characters.'
-                  example: dwjjetjmv
+                  example: uuwkwqmmdccnvvv
                 phone:
                   type: string
                   description: ''
-                  example: magnam
+                  example: autem
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: alysson17@example.com
+                  example: bechtelar.bennett@example.org
                 password:
                   type: string
                   description: 'Must be at least 8 characters.'
-                  example: 'jpZHnTf&'
+                  example: '-DvB@6n~S:?=I3f'
                 postal_code:
                   type: string
                   description: ''
-                  example: facere
+                  example: quis
                 City:
                   type: string
                   description: ''
-                  example: totam
+                  example: consectetur
                 Birth_date:
                   type: string
                   description: ''
-                  example: quasi
+                  example: perspiciatis
                 Nationality:
                   type: string
                   description: ''
-                  example: fugit
+                  example: qui
               required:
                 - Full_name
                 - phone
@@ -225,12 +225,12 @@ paths:
           in: query
           name: account
           description: ''
-          example: 7
+          example: 18
           required: false
           schema:
             type: integer
             description: ''
-            example: 7
+            example: 18
       responses:
         200:
           description: ''
@@ -261,12 +261,12 @@ paths:
           in: query
           name: account
           description: int
-          example: veritatis
+          example: officia
           required: true
           schema:
             type: string
             description: int
-            example: veritatis
+            example: officia
       responses:
         200:
           description: ''
@@ -301,14 +301,14 @@ paths:
         in: path
         name: id
         description: 'The ID of the account.'
-        example: et
+        example: quam
         required: true
         schema:
           type: string
   /api/ur:
     get:
-      summary: ''
-      operationId: getApiUr
+      summary: 'Get your profile after you login or register'
+      operationId: getYourProfileAfterYouLoginOrRegister
       description: ''
       parameters: []
       responses:
@@ -636,6 +636,12 @@ paths:
                       password: $2y$10$1kWeAXRiFj9jNEIIXP2dEunFeSWy5epxmS9cIIpTL/xFF/fJ5ZexW
                       phone: +963-0966539203
                       Profile_image: null
+                    -
+                      Full_name: mohamad
+                      email: esraa003@gmail.com
+                      password: $2y$10$c/ybFf3BQKOhloXi84yd2uP30AmzMGHIDkDkEOuKhue94V40TfW/C
+                      phone: +963-099300741
+                      Profile_image: null
                 properties:
                   data:
                     type: array
@@ -934,6 +940,12 @@ paths:
                         password: $2y$10$1kWeAXRiFj9jNEIIXP2dEunFeSWy5epxmS9cIIpTL/xFF/fJ5ZexW
                         phone: +963-0966539203
                         Profile_image: null
+                      -
+                        Full_name: mohamad
+                        email: esraa003@gmail.com
+                        password: $2y$10$c/ybFf3BQKOhloXi84yd2uP30AmzMGHIDkDkEOuKhue94V40TfW/C
+                        phone: +963-099300741
+                        Profile_image: null
                     items:
                       type: object
                       properties:
@@ -1070,15 +1082,15 @@ paths:
                 logo:
                   type: string
                   description: ''
-                  example: eaque
+                  example: molestiae
                 Currency_name:
                   type: string
                   description: ''
-                  example: sunt
+                  example: iste
                 Abbrevation:
                   type: string
                   description: ''
-                  example: rem
+                  example: voluptatem
               required:
                 - logo
                 - Currency_name
@@ -1147,8 +1159,8 @@ paths:
           type: integer
   /api/currencyprice:
     get:
-      summary: 'Display a listing of the resource.'
-      operationId: displayAListingOfTheResource
+      summary: 'get a price of currency'
+      operationId: getAPriceOfCurrency
       description: ''
       parameters: []
       responses:
@@ -1250,23 +1262,23 @@ paths:
                 today_price:
                   type: string
                   description: ''
-                  example: rerum
+                  example: sapiente
                 percentage:
                   type: string
                   description: ''
-                  example: alias
+                  example: repudiandae
                 yesterday_price:
                   type: string
                   description: ''
-                  example: voluptatem
+                  example: tenetur
                 Date_Time:
                   type: string
                   description: ''
-                  example: ducimus
+                  example: numquam
                 currency_id:
                   type: string
                   description: ''
-                  example: eius
+                  example: animi
               required:
                 - today_price
                 - percentage
@@ -1499,27 +1511,27 @@ paths:
                 Card_image:
                   type: string
                   description: ''
-                  example: adipisci
+                  example: voluptatem
                 Card_number:
                   type: string
                   description: ''
-                  example: nemo
+                  example: velit
                 Holder_Name:
                   type: string
                   description: ''
-                  example: culpa
+                  example: itaque
                 Cvc:
                   type: string
                   description: ''
-                  example: suscipit
+                  example: rem
                 Expire_Date:
                   type: string
                   description: ''
-                  example: est
+                  example: fugit
                 Wallet_id:
                   type: integer
                   description: ''
-                  example: 6
+                  example: 10
               required:
                 - Card_image
                 - Card_number
@@ -1700,19 +1712,19 @@ paths:
                 account_number:
                   type: string
                   description: ''
-                  example: necessitatibus
+                  example: aut
                 currency_id:
                   type: string
                   description: ''
-                  example: rem
+                  example: aut
                 email:
                   type: string
                   description: ''
-                  example: quasi
+                  example: sed
                 quantity:
                   type: string
                   description: ''
-                  example: voluptates
+                  example: maiores
               required:
                 - account_number
                 - currency_id
@@ -2030,15 +2042,15 @@ paths:
                 currency_id:
                   type: string
                   description: ''
-                  example: delectus
+                  example: voluptatum
                 Quantity:
                   type: string
                   description: ''
-                  example: veritatis
+                  example: deleniti
                 User_id:
                   type: string
                   description: ''
-                  example: rerum
+                  example: saepe
               required:
                 - currency_id
                 - Quantity
@@ -2406,23 +2418,23 @@ paths:
                 account_number:
                   type: string
                   description: ''
-                  example: debitis
+                  example: nostrum
                 currency_id_in:
                   type: string
                   description: ''
-                  example: voluptate
+                  example: hic
                 currency_id_out:
                   type: string
                   description: ''
-                  example: voluptas
+                  example: tenetur
                 price:
                   type: string
                   description: ''
-                  example: quisquam
+                  example: voluptatem
                 quantity:
                   type: string
                   description: ''
-                  example: est
+                  example: quo
               required:
                 - account_number
                 - currency_id_in
@@ -2715,19 +2727,19 @@ paths:
                 account_number:
                   type: string
                   description: ''
-                  example: magni
+                  example: qui
                 currency_id_in:
                   type: string
                   description: ''
-                  example: autem
+                  example: fuga
                 currency_id_out:
                   type: string
                   description: ''
-                  example: fugiat
+                  example: est
                 quantity:
                   type: string
                   description: ''
-                  example: illum
+                  example: sint
               required:
                 - account_number
                 - currency_id_in
@@ -3101,11 +3113,11 @@ paths:
                 currency_id:
                   type: string
                   description: ''
-                  example: eveniet
+                  example: velit
                 User_id:
                   type: string
                   description: ''
-                  example: aut
+                  example: natus
               required:
                 - currency_id
                 - User_id
@@ -3959,7 +3971,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the bestCurrency.'
-        example: aut
+        example: voluptas
         required: true
         schema:
           type: string
@@ -4007,7 +4019,7 @@ paths:
         in: path
         name: curName
         description: ''
-        example: quasi
+        example: illum
         required: true
         schema:
           type: string

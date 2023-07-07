@@ -12,6 +12,7 @@ use App\Http\Controllers\Resources\CurrencyResource;
 use App\Http\Controllers\Resources\CurrencyPriceResource;
 use App\Filters\V1\CurrencyFilter;
 use Illuminate\Support\Facades\DB;
+
 class CurrencyController extends Controller
 {
     /**

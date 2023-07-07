@@ -36,6 +36,9 @@ class UserController extends Controller
     {
 
     }
+    /**
+     * Get your profile after you login or register
+     */
     public function Pofile(User $ur)
     {
         $ur=Auth::user();

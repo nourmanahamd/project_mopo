@@ -16,7 +16,7 @@ use App\Http\Requests\Request\api\PriceRequest;
 class CurrencyPriceController extends Controller
 {
     /**
-     * Display a listing of the resource.
+    * get a price of currency
      */
     public function index(Request $request)
     {
